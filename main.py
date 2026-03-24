@@ -4,7 +4,7 @@ import json
 #create 
 mcp=FastMCP("Simple Caluculator server 2")
 #tool
-@mcp.tool
+@mcp.tool()
 def add(a:int,b:int)->int:
     """Add two Number Together
     Args :
@@ -15,7 +15,7 @@ def add(a:int,b:int)->int:
     """
     return a+b
 #----------------------------------#tool:Generate a random number -------------------
-@mcp.tool
+@mcp.tool()
 def random_number(min_val:int=1,max_val:int=100)->int:
     """Generate A random Number Within Range
     Args :
