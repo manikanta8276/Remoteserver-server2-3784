@@ -36,7 +36,7 @@ def server_info()->str:
         "another":"your name "
 
     }
-    return json.dump(info,indent=2)
+    return json.dumps(info,indent=2)
 
 
 
